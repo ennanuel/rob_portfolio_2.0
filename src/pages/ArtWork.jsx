@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { useRef, useEffect } from "react"
 import { Work } from "../components"
-import { works } from "../assets/data"
+// import { works } from "../assets/data"
 import { Link, useParams } from "react-router-dom"
 
 
@@ -113,9 +113,9 @@ const WorksContainer = styled.article`
 
 const ArtWork = () => {
     const contRef = useRef()
-    const { id } = useParams()
-    const data = works.filter( work => work.id === +id )[0]
-    console.log(data, id , works.map(work => work.id))
+    // const { id } = useParams()
+    // const data = works.filter( work => work.id === +id )[0]
+    // console.log(data, id , works.map(work => work.id))
     useEffect(() => { contRef.current.scrollIntoView({ behavior: "smooth"}) }, [id])
 
   return (
@@ -139,7 +139,7 @@ const ArtWork = () => {
             
             <WorksContainer className="workcontainer">
                 { 
-                    works.filter( work => work.id !== +id ).map( (work, i) => <Link to={`/artwork/${work.id}`}><Work key={work.id} data={work} /></Link>)
+                    // works.filter( work => work.id !== +id ).map( (work, i) => <Link to={`/artwork/${work.id}`}><Work key={work.id} data={work} /></Link>)
                 }
             </WorksContainer>
         </OtherWorks>

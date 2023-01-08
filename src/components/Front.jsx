@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { AiFillCaretDown } from "react-icons/ai"
 import { useEffect, useState } from "react"
-import { works } from "../assets/data"
+// import { works } from "../assets/data"
 
 const Component = styled.div`
     width: 100vw;
@@ -82,7 +82,7 @@ const ScrollDown = styled.a`
 `
 
 const Front = () => {
-  const images = works.slice(0, 5).map(work => work.image)
+  // const images = works.slice(0, 5).map(work => work.image)
   const [index, setIndex] = useState(0)
   const [hide, setHide] = useState(false)
 
