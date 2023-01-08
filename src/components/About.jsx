@@ -60,12 +60,12 @@ const About = () => {
   return (
     <Container id="about">
         <TitleContainer>
-            <Title>About Me.</Title>
+            <Title>About</Title>
         </TitleContainer>
         <DescContainer>
             <Desc>
-                My name is Robert Orgi. I'm a digital artist and I specialize in different art genres as seen on this Portfolio.<br />
-                Art has always been my passion since I was a kid and with the years gone I've groomed my skill to become versatile in the art space.<br />
+                {"   "}My name is Robert Orji. I'm a digital artist and I specialize in different art genres as seen on this Portfolio.<br /><br />
+                Art has always been my passion since I was a kid and with the years gone I've groomed my skill to become versatile in the art space.<br /><br />
                 I'm a keen user of <Red>Procreate</Red> and I use it whenever I want to go into a more detailed painting but for character designs I use <Red>Adobe Illustrator</Red>.
             </Desc>
         </DescContainer>
