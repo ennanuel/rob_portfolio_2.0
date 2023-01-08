@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { Link } from "react-router-dom"
 import Work from "./Work"
-// import { works } from "../assets/data"
+import { works } from "../assets/data"
 
 const Container = styled.section`
     width: 100%;
@@ -56,7 +56,7 @@ const Works = () => {
         </TitleContainer>
         <WorksContainer className="workcontainer">
             {
-            // works.map( work => <Link to={`/artwork/${work.id}`} key={work.id}><Work data={work} /></Link>)
+                works.map( work => <Link to={`/artwork/${work.id}`} key={work.id}><Work data={work} /></Link>)
             }
         </WorksContainer>
     </Container>
