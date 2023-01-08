@@ -104,7 +104,7 @@ const Front = () => {
   return (
     <Component className="hero">
       <HeroContainer className={`${hide && "hide"}`}>
-        <FrontImage src={images[index]} />
+        <FrontImage loading="lazy" src={images[index]} />
       </HeroContainer>
       <Intro>
         <Intro>

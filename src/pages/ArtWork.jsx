@@ -122,7 +122,7 @@ const ArtWork = () => {
     <Container ref={contRef}>
         <ArtContainer className="artcontainer">
             <ImageContainer className="imagecontainer">
-                <Image src={data?.image} />
+                <Image loading="lazy" src={data?.image} />
             </ImageContainer>
             
             <Info className="info">

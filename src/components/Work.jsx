@@ -54,7 +54,7 @@ const Image = styled.img`
 const Work = ({ data }) => {
   return (
     <Container>
-        <Image src={data.image} />
+        <Image src={data.image} loading="lazy" />
     </Container>
   )
 }
