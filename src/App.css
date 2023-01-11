@@ -75,7 +75,7 @@ html, body {
 
 @media screen and (max-width: 720px) {
   .workcontainer {
-    padding: 10px !important;
+    padding: 20px !important;
     margin: 0;
   }
 
@@ -84,8 +84,9 @@ html, body {
   }
 
   .artcontainer {
+    padding: 0 0 50px !important;
     flex-direction: column;
-    justify-content: center;
+    height: max-content !important;
   }
 
   .artcontainer .imagecontainer {

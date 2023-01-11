@@ -59,9 +59,8 @@ const Footer = () => {
   return (
     <Container>
       <Links>
-        <SocialLink><AiOutlineInstagram /></SocialLink>
-        <SocialLink><AiOutlineFacebook /></SocialLink>
-        <SocialLink><FiTwitter /></SocialLink>
+        <SocialLink target="_blank" href="http://www.instagram.com/_artrobdgram"><AiOutlineInstagram /></SocialLink>
+        <SocialLink target="_blank" href="http://www.twitter.com/panfresco0"><FiTwitter /></SocialLink>
       </Links>
 
       <Copyright>Copyright © All rights reserved.</Copyright>

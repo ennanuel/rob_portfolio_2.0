@@ -124,6 +124,7 @@ const MenuButton = styled.button`
 const Header = ({ showMenu, setShowMenu }) => {
     const [scrolled, setScrolled] = useState(false)
     const [innerWidth, setInnerWidth] = useState(window.innerWidth)
+    const [currentPage, setCurrentPage] = useState('home')
 
     useEffect(() => {
         const handleScroll = () => {
@@ -151,14 +152,17 @@ const Header = ({ showMenu, setShowMenu }) => {
                 <Logo><Link to="/">Robert Orji<Red>.</Red></Link></Logo>
                 <Navbar onClick={() => setShowMenu(false)}>
                     <NavList>
-                        <NavItem><NavLink><Link to="/">Home</Link></NavLink></NavItem>
+                         <NavItem>
+                            <NavLink><Link to="/">Home</Link></NavLink>
+                        </NavItem>
                         <NavItem><NavLink><a href="#works">Works</a></NavLink></NavItem>
-                        <NavItem><NavLink><a href="#about">About</a></NavLink></NavItem>
+                        <NavItem>
+                            <NavLink><a href="#about">About</a></NavLink>
+                        </NavItem>
                         <NavItem>
                             <Links>
-                                <Icon target="_blank" href="http://www.instagram.com"><AiOutlineInstagram /></Icon>
-                                <Icon target="_blank" href="http://www.facebook.com"><AiOutlineFacebook /></Icon>
-                                <Icon target="_blank" href="http://www.twitter.com"><FiTwitter /></Icon>
+                                <Icon target="_blank" href="http://www.instagram.com/_artrobdgram"><AiOutlineInstagram /></Icon>
+                                <Icon target="_blank" href="http://www.twitter.com/panfresco0"><FiTwitter /></Icon>
                             </Links>
                         </NavItem>
                     </NavList>
@@ -178,10 +182,9 @@ const Header = ({ showMenu, setShowMenu }) => {
                         <NavItem><NavLink><a href="#about">About</a></NavLink></NavItem>
                     </NavList>
                 </Navbar>
-                    <Links>
-                        <Link noBefore={true}><Icon><AiOutlineInstagram /></Icon></Link>
-                        <Link noBefore={true}><Icon><AiOutlineFacebook /></Icon></Link>
-                        <Link noBefore={true}><Icon><FiTwitter /></Icon></Link>
+                    <Links onClick={() => setShowMenu(false)}>
+                        <a target="_blank" href="http://www.instagram.com/_artrobdgram"><Icon><AiOutlineInstagram /></Icon></a>
+                        <a target="_blank" href="http://www.twitter.com/panfresco0"><Icon><FiTwitter /></Icon></a>
                     </Links>
             </div>
         }

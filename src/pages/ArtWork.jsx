@@ -45,7 +45,7 @@ const Title = styled.h1`
     font-weight: 500;
     padding: 0;
     width: max-content;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 `
 
 const Desc = styled.p`
@@ -115,7 +115,6 @@ const ArtWork = () => {
     const contRef = useRef()
     const { id } = useParams()
     const data = works.filter( work => work.id === +id )[0]
-    console.log(data, id , works.map(work => work.id))
     useEffect(() => { contRef.current.scrollIntoView({ behavior: "smooth"}) }, [id])
 
   return (
@@ -128,7 +127,7 @@ const ArtWork = () => {
             <Info className="info">
                 <Title>My Work</Title>
                 <Desc>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et illo voluptates sunt officiis voluptatibus</Desc>
-                <Button>go to post</Button>
+                <Button onClick={() => { location.href = data.link || "http://www.instagram.com" }}>go to post</Button>
             </Info>
         </ArtContainer>
 
@@ -139,7 +138,7 @@ const ArtWork = () => {
             
             <WorksContainer className="workcontainer">
                 { 
-                    works.filter( work => work.id !== +id ).map( (work, i) => <Link to={`/artwork/${work.id}`}><Work key={work.id} data={work} /></Link>)
+                    works.filter( work => work.id !== +id ).map( (work, i) => <Link key={work.id} to={`/artwork/${work.id}`}><Work data={work} /></Link>)
                 }
             </WorksContainer>
         </OtherWorks>
