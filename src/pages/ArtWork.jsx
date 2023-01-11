@@ -21,6 +21,7 @@ const ArtContainer = styled.article`
 
 const Info = styled.div`
     flex: 1;
+    width: 100%;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -44,15 +45,15 @@ const Title = styled.h1`
     font-size: 50px;
     font-weight: 500;
     padding: 0;
-    width: max-content;
+    width: 100%;
     margin-bottom: 10px;
-    max-width: 500px;
     word-wrap: break-word;
     line-height: 1;
 `
 
 const Desc = styled.p`
     border-left: 4px solid darkorange;
+    width: 100%;
     padding: 10px;
 `
 
