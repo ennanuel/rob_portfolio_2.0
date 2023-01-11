@@ -1,8 +1,9 @@
 import styled from "styled-components"
 import { Link } from "react-router-dom"
-import { AiOutlineInstagram, AiOutlineFacebook, AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai"
+import { AiOutlineInstagram, AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai"
 import { FiTwitter } from "react-icons/fi"
 import { useState, useEffect } from "react"
+import { useLocation } from "react-router-dom"
 
 const Heading = styled.header`
     display: flex;
@@ -124,7 +125,7 @@ const MenuButton = styled.button`
 const Header = ({ showMenu, setShowMenu }) => {
     const [scrolled, setScrolled] = useState(false)
     const [innerWidth, setInnerWidth] = useState(window.innerWidth)
-    const [currentPage, setCurrentPage] = useState('home')
+    const location = useLocation()
 
     useEffect(() => {
         const handleScroll = () => {
@@ -157,7 +158,7 @@ const Header = ({ showMenu, setShowMenu }) => {
                         </NavItem>
                         <NavItem><NavLink><a href="#works">Works</a></NavLink></NavItem>
                         <NavItem>
-                            <NavLink><a href="#about">About</a></NavLink>
+                            { location.pathname === "/" && <NavLink><a href="#about">About</a></NavLink> }
                         </NavItem>
                         <NavItem>
                             <Links>
@@ -179,7 +180,7 @@ const Header = ({ showMenu, setShowMenu }) => {
                     <NavList phone={true}>
                         <NavItem><NavLink><Link to="/">Home</Link></NavLink></NavItem>
                         <NavItem><NavLink><a href="#works">Works</a></NavLink></NavItem>
-                        <NavItem><NavLink><a href="#about">About</a></NavLink></NavItem>
+                        { location.pathname === "/" && <NavLink><a href="#about">About</a></NavLink> }
                     </NavList>
                 </Navbar>
                     <Links onClick={() => setShowMenu(false)}>
