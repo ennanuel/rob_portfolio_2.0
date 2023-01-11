@@ -46,6 +46,9 @@ const Title = styled.h1`
     padding: 0;
     width: max-content;
     margin-bottom: 10px;
+    max-width: 500px;
+    word-wrap: break-word;
+    line-height: 1;
 `
 
 const Desc = styled.p`
@@ -125,8 +128,20 @@ const ArtWork = () => {
             </ImageContainer>
             
             <Info className="info">
-                <Title>My Work</Title>
-                <Desc>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et illo voluptates sunt officiis voluptatibus</Desc>
+                <Title>
+                    { data?.title || "My Work"}
+                </Title>
+                {
+                    data.desc &&
+                    <Desc>
+                        {
+                            data.desc?.split('\n').map(
+                                text => <><span>{text}</span><br /></>
+                            )
+                        }
+                    </Desc>
+                }
+                
                 <Button onClick={() => { location.href = data.link || "http://www.instagram.com" }}>go to post</Button>
             </Info>
         </ArtContainer>
