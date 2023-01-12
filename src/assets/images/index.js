@@ -8,5 +8,12 @@ import image7 from "./IMG_3634.jpg"
 import image8 from "./IMG_3635.jpg"
 import image9 from "./IMG_3636.jpg"
 import image10 from "./IMG_3637.jpg"
+import image11 from "./IMG_3638.jpg"
+import image12 from "./IMG_3639.jpg"
+import image13 from "./IMG_3640.jpg"
+import image14 from "./IMG_3641.jpg"
+import image15 from "./IMG_3642.jpg"
+import image16 from "./IMG_3643.jpg"
+import image17 from "./IMG_3644.jpg"
 
-export { image1, image2, image3, image4, image5, image6, image7, image8, image9, image10 };
+export { image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15, image16, image17 };

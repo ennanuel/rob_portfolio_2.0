@@ -1,4 +1,4 @@
-import { image1, image2, image3, image4, image5, image6, image7, image8, image9, image10 } from "../images"
+import { image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15, image16, image17 } from "../images"
 
 export const works = [
     {
@@ -70,5 +70,54 @@ export const works = [
         title: "Queen Amina",
         desc: "",
         link: "https://www.instagaram.com/p/CV8uqmuKYDz",
+    },
+    {
+        id: 11,
+        image: image11,
+        title: "Sango \"The God King\" #1",
+        desc: "",
+        link: ""
+    },
+    {
+        id: 12,
+        image: image12,
+        title: "Sango \"The God King\" #2",
+        desc: "",
+        link: ""
+    },
+    {
+        id: 13,
+        image: image13,
+        title: "Oya #1",
+        desc: "",
+        link: ""
+    },
+    {
+        id: 14,
+        image: image14,
+        title: "Oya #2",
+        desc: "",
+        link: ""
+    },
+    {
+        id: 15,
+        image: image15,
+        title: "Oya #3",
+        desc: "",
+        link: ""
+    },
+    {
+        id: 16,
+        image: image16,
+        title: "Oya #4",
+        desc: "",
+        link: ""
+    },
+    {
+        id: 17,
+        image: image17,
+        title: "Omenana",
+        desc: "",
+        link: ""
     },
 ]

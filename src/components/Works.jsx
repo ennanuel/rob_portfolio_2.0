@@ -52,7 +52,7 @@ const Works = () => {
   return (
     <Container id="works">
         <TitleContainer>
-            <Title>My Works.</Title>
+            <Title>My Work.</Title>
         </TitleContainer>
         <WorksContainer className="workcontainer">
             {
